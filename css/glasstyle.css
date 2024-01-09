@@ -1,3 +1,7 @@
+/*******************************************************************************/
+/*                      Hoja de estilo del Login                               */
+/*******************************************************************************/
+
 *,
 *:before,
 *:after{
@@ -6,7 +10,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #080710;
+    background-color: #777676;
 }
 .background{
     width: 430px;
@@ -25,7 +29,7 @@ body{
 .shape:first-child{
     background: linear-gradient(
         #237c00,
-        #000000
+        #777676
     );
     left: -100px;
     top: -30px;
@@ -33,7 +37,7 @@ body{
 .shape:last-child{
     background: linear-gradient(
         to right,
-        hsl(0, 0%, 0%),
+        #777676,
         #b3009b
     );
     right: -30px;
