@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Login</title>
+    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./css/glasstyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
@@ -12,12 +13,39 @@
         <div class="shape"></div>
     </div>
     <form action="" method="post">
-        <h3>Iniciar sesión</h3>
-        <label for="username">Usuario</label>
-        <input type="text" placeholder="Email o Número de Teléfono" class="esp username">
 
-        <label for="password">Contraseña</label>
-        <input type="password" placeholder="Contraseña" class="esp password">
+        <h3>Museo Británico</h3>
+        <div class="grid">
+            <div class="col-2"> 
+                <label for="nombre">Pieza Histórica</label>
+                <input type="text" placeholder="Nombre de la Pieza Histórica" class="esp">
+
+                <label for="origen">País de origen</label>
+                <input type="text" placeholder="País del que proviene" class="esp">
+
+                <label for="tipo">Tipo de Pieza</label>
+                <input type="text" placeholder="Tipo de pieza: escultura, cuadro, arma..." class="esp">
+            </div>
+
+            <div class="col-2" id="">
+                <label id="creacion" for="edad">Edad en la que se creó</label>
+                <select name="edad" id="edad">
+                    <option value="primera">. . .</option>
+                    <option value="Pehistoria">Pehistoria</option>
+                    <option value="EdadAntigua">Edad Antigua</option>
+                    <option value="EdadMedia">Edad Media</option>
+                    <option value="EdadContemporanea">Edad Contemporánea</option>
+                    <option value="Indeterminado">Indeterminado</option>
+                </select>
+
+                <label for="descripción">Descripción</label>
+                <input type="text" placeholder="Corta descripción" class="esp">
+
+                <label for="seccion">Sección</label>
+                <input type="text" placeholder="Sección en la que se ubica" class="esp">
+            </div>
+
+        </div>
 
         <button type="submit">Entrar</button>
     </form>
