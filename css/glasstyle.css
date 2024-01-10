@@ -1,7 +1,9 @@
 /*******************************************************************************/
-/*                      Hoja de estilo del Login                               */
+/*                   Hoja de estilo del formulario                             */
 /*                       Manuel Alarcón Fortes                                 */
 /*******************************************************************************/
+
+/*************************Estilo General*******************************/
 
 *,
 *:before,
@@ -44,6 +46,8 @@ body{
     right: -30px;
     bottom: -80px;
 }
+
+/*************************Formulario*******************************/
 form{
     height: 620px;
     width: 1000px;
@@ -103,29 +107,6 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-.social{
-  margin-top: 30px;
-  display: flex;
-}
-.social div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
-  margin-right: 4px;
-}
-
 button:hover{
     background-color: rgb(214, 214, 214);
 }
@@ -143,19 +124,23 @@ select{
     color: white;
 }
 
+#creacion{
+    margin-bottom: 1.5%;
+}
+
+/***************************Grid***************************/
+
 .grid{
     margin: 1%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-#creacion{
-    margin-bottom: 1.5%;
-}
-
 .col-2{
     margin: 20px;
 }
+
+/***********************Responsividad**************************/
 
 @media screen and (max-width: 1050px) {
     .grid{

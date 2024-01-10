@@ -1,3 +1,10 @@
+/*******************************************************************************/
+/*                      Hoja de estilo de la tabla                             */
+/*                       Manuel Alarcón Fortes                                 */
+/*******************************************************************************/
+
+/****************************Estilo General********************************/
+
 html,
 body {
 	height: 100%;
@@ -18,7 +25,9 @@ body {
 }
 
 table {
-	width: 800px;
+	text-align: center;
+	width: 1200px;
+	height: 100%;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -30,6 +39,7 @@ td {
 	padding: 15px;
 	background-color: rgba(255,255,255,0.2);
 	color: #fff;
+	border: solid 1px #b3009bb4;
 }
 
 
