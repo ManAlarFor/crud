@@ -12,8 +12,8 @@ body {
 
 body {
 	margin: 0;
-	background: linear-gradient(45deg, #237c00c6, #b3009bb4);
-	font-family: sans-serif;
+	background: #272626;
+	font-family: 'Poppins',sans-serif;
 	font-weight: 100;
 }
 
@@ -24,6 +24,15 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+caption{
+	margin-bottom: 10px;
+	font-size: 3em;
+	font-family: 'Poppins',sans-serif;
+	color: white;
+	background-color: #ffffff1f;
+	border-radius: 10px;
+}
+
 table {
 	text-align: center;
 	width: 1200px;
@@ -32,23 +41,49 @@ table {
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
     border-radius: 10px;
+    backdrop-filter: blur(50px);
 }
 
 th,
 td {
 	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
+	background-color: #ffffff1f;
 	color: #fff;
-	border: solid 1px #b3009bb4;
+	border: solid 1px #b3009b00;
+    backdrop-filter: blur(50px);
 }
 
-
 th, td:hover{
-    text-align: left;
+    text-align: center;
     background-color: beige;
     color: black;
 }
 
 th:hover{
     background-color: blanchedalmond;
+}
+
+
+.background .shape{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #237c00,
+        #272626
+    );
+    left: 400px;
+    top: 80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #272626,
+        #b3009b
+    );
+    right: 400px;
+    bottom: 80px;
 }

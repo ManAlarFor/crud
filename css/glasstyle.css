@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #777676;
+    background-color: #272626;
 }
 .background{
     width: 430px;
@@ -32,7 +32,7 @@ body{
 .shape:first-child{
     background: linear-gradient(
         #237c00,
-        #777676
+        #272626
     );
     left: -100px;
     top: -30px;
@@ -40,7 +40,7 @@ body{
 .shape:last-child{
     background: linear-gradient(
         to right,
-        #777676,
+        #272626,
         #b3009b
     );
     right: -30px;
@@ -51,7 +51,7 @@ body{
 form{
     height: 620px;
     width: 1000px;
-    background-color: rgba(255,255,255,0.13);
+    background-color: #ffffff21;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -100,7 +100,7 @@ button{
     margin-top: 25px;
     width: 100%;
     background-color: #ffffff;
-    color: #080710;
+    color: #272626;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
@@ -112,7 +112,7 @@ button:hover{
 }
 
 option{
-    color: #080710;
+    color: #272626;
 }
 
 select{
@@ -124,7 +124,7 @@ select{
     color: white;
 }
 
-#creacion{
+.creacion{
     margin-bottom: 1.5%;
 }
 
