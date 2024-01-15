@@ -49,7 +49,7 @@ body{
 
 /*************************Formulario*******************************/
 form{
-    height: 620px;
+    height: 640px;
     width: 1000px;
     background-color: #ffffff21;
     position: absolute;
@@ -150,7 +150,7 @@ select{
     form{
         width: 90%;
         top: 50%;
-        height: 1290px;
+        height: 1320px;
     }
 
     form h3{
