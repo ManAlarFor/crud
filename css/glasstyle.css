@@ -86,7 +86,7 @@ input{
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255,255,255,0.07);
+    background-color: #ffffff12;
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
@@ -142,12 +142,14 @@ select{
 
 /***********************Responsividad**************************/
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1000px) {
     .grid{
         grid-template-columns: 100%;
     }
 
     form{
-        width: 70%;
+        width: 90%;
+        top: 50%;
+        height: 990px;
     }
 }

@@ -26,7 +26,7 @@ body {
 
 caption{
 	margin-bottom: 10px;
-	font-size: 3em;
+	font-size: 1.5em;
 	font-family: 'Poppins',sans-serif;
 	color: white;
 	background-color: #ffffff1f;
@@ -53,16 +53,37 @@ td {
     backdrop-filter: blur(50px);
 }
 
-th, td:hover{
+th, tr:hover td{
     text-align: center;
     background-color: beige;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 th:hover{
     background-color: blanchedalmond;
 }
 
+.edit, .del{
+	border-radius: 10px ;
+	font-family: 'Poppins',sans-serif;
+	padding: 7px;
+	width: 70px;
+}
+
+.edit{
+	background-color: #fff200d7;
+	margin-bottom: 10% ;
+}
+.edit:hover{
+	background-color: #ddd2058e;
+}
+
+.del {
+	background-color: #ff0000bc;
+}
+.del:hover {
+	background-color: #c40000a0;
+}
 
 .background .shape{
     height: 400px;
