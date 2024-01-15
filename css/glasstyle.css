@@ -150,6 +150,29 @@ select{
     form{
         width: 90%;
         top: 50%;
-        height: 990px;
+        height: 1290px;
     }
+
+    form h3{
+        font-size: 3em;
+    }
+
+    label{
+        font-size: 2em;
+    }
+
+    input{
+        height: 75px;
+        font-size: 1.5em;
+    }
+
+    select{
+        height: 75px;
+        font-size: 1.5em;
+    }
+
+    option{
+        font-size: 0.5em
+    }
+    
 }
