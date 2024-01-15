@@ -93,7 +93,7 @@ th:hover{
 }
 .shape:first-child{
     background: linear-gradient(
-        #237c00,
+        #3bd000,
         #272626
     );
     left: 400px;
@@ -103,7 +103,7 @@ th:hover{
     background: linear-gradient(
         to right,
         #272626,
-        #b3009b
+        #9e0089
     );
     right: 400px;
     bottom: 80px;
