@@ -116,21 +116,19 @@ button{
     bottom: 80px;
 }
 
-/* 
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
+
 @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; 
 	}
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
+
+	.shape{
+		display: none;
+	}
+
 	thead tr { 
 		position: absolute;
 		top: -9999px;
@@ -140,11 +138,10 @@ only screen and (max-width: 760px),
 	tr { border: 1px solid #ccc; }
 
 	td,th{
-		padding: 2px;
+		padding: 0px;
 	}
 	
 	td { 
-		/* Behave  like a "row" */
 		border: none;
 		border-bottom: 1px solid #eee; 
 		position: relative;
@@ -152,9 +149,7 @@ only screen and (max-width: 760px),
 	}
 	
 	td:before { 
-		/* Now like a table header */
 		position: absolute;
-		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
 		width: 45%; 
@@ -163,9 +158,9 @@ only screen and (max-width: 760px),
 	}
 	
 	.container{
-		top:100%;
-		left: 165%;
-		width: 600px;
+		top:105%;
+		left: 1%;
+		width: 0px;
 	}
 
 	td:nth-of-type(1):before { content: "Nombre de la Pieza Histórica"; }

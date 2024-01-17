@@ -111,6 +111,13 @@ button:hover{
     background-color: rgb(214, 214, 214);
 }
 
+a{
+    color: rgb(132, 132, 255);
+}
+
+a:hover{
+    color: rgb(69, 69, 255);
+}
 
 .creacion{
     margin-bottom: 1.5%;
