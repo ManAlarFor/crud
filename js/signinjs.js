@@ -35,7 +35,7 @@ function validacion(){
 
     }
 
-    if(usuario=="" || ! /^\s+$/.test(usuario) || ! /[0-9]/.test(usuario) || !/[a-zñ']{2,}/.test(usuario)){
+    if(usuario=="" || /^\s+$/.test(usuario) || ! /[0-9]/.test(usuario) || !/[a-zñ']{2,}/.test(usuario)){
 
         document.getElementById('avisoUsuario').style.visibility="visible";
         document.getElementById("Usuario").style.borderColor="red";
@@ -43,7 +43,7 @@ function validacion(){
 
     }
 
-    if(ID=="" || ! /^\s+$/.test(ID) ||  /[0-9]/.test(ID) || !/[a-zñ']{2,}/.test(ID)){
+    if(ID=="" ||  /^\s+$/.test(ID) || ! /[0-9]/.test(ID) || /[a-zñ']{2,}/.test(ID)){
 
         document.getElementById('avisoID').style.visibility="visible";
         document.getElementById("ID").style.borderColor="red";
