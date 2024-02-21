@@ -13,7 +13,7 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form action="" method="post">
+    <form action="" method="post" onsubmit="return validacion()">
 
         <div id="texto">
 
@@ -22,12 +22,13 @@
 
             <div class="grid">
                 <div class="col-2"> 
-                    <label for="nombre">Pieza Histórica</label>
-                    <input type="text" placeholder="Nombre de la Pieza Histórica" required>
+                    <label for="nombre">Pieza Histórica <span>*</span></label>
+                    <input type="text" placeholder="Nombre de la Pieza Histórica" onchange="resetear('Nombre')" id="Nombre" name="Nombre" aria-describedby="avisoNombre">
+                    <p id="avisoNombre" class="aviso">Nombre de la pieza requerido</p>
 
-                    <label class="creacion" for="origen">País de origen</label>
-                    <select id="pais" name="pais" required>
-                        <option value="primera">. . .</option>
+                    <label class="creacion" for="origen">País de origen <span>*</span></label>
+                    <select id="Pais" name="Pais"  onchange="resetear('Pais')">
+                        <option value="0">. . .</option>
                         <option value="AF">Afganistán</option>
                         <option value="AL">Albania</option>
                         <option value="DE">Alemania</option>
@@ -264,27 +265,33 @@
                         <option value="ZW">Zimbabue</option>
                         <option value="Desconocido">Desconocido</option>
                     </select>
+                    <p id="avisoPais" class="aviso">Pais de origen requerido</p>
 
-                    <label for="tipo">Tipo de Pieza</label>
-                    <input type="text" placeholder="Tipo de pieza: escultura, armadura, arma..." required>
+                    <label for="Pieza">Tipo de Pieza <span>*</span></label>
+                    <input type="text" placeholder="Tipo de pieza: escultura, armadura, arma..." onchange="resetear('Pieza')" id="Pieza" name="Pieza" aria-describedby="avisoPieza">
+                    <p id="avisoPieza" class="aviso">Tipo de pieza requerido</p>
+                    
+
                 </div>
 
                 <div class="col-2" id="">
-                    <label class="creacion" for="edad">Edad en la que se creó</label>
-                    <select name="edad" id="edad" required>
-                        <option value="primera">. . .</option>
+                    <label class="creacion" for="Edad">Edad en la que se creó <span>*</span></label>
+                    <select name="Edad" id="Edad" onchange="resetear('Edad')">
+                        <option value="0">. . .</option>
                         <option value="Prehistoria">Prehistoria</option>
                         <option value="EdadAntigua">Edad Antigua</option>
                         <option value="EdadMedia">Edad Media</option>
                         <option value="EdadContemporanea">Edad Contemporánea</option>
                         <option value="Desconocido">Desconocido</option>
                     </select>
+                    <p id="avisoEdad" class="aviso">Edad de creación requerida</p>
 
-                    <label for="descripción">Descripción</label>
-                    <input type="text" placeholder="Corta descripción" required>
+                    
 
-                    <label for="seccion">Sección</label>
-                    <input type="text" placeholder="Sección en la que se ubica" required>
+                    <label id="descrip" for="Seccion">Sección <span>*</span></label>
+                    <input type="text" placeholder="Sección en la que se ubica" onchange="resetear('Seccion')" id="Seccion" name="Seccion" aria-describedby="avisoSeccion">
+                    <p id="avisoSeccion" class="aviso">Seccion en la que se ubica requerido</p>
+
                 </div>
 
             </div>
@@ -292,5 +299,8 @@
         <button type="submit">Entrar</button>
 
     </form>
+
+    <script src="./js/insercionjs.js"></script>
+
 </body>
 </html>

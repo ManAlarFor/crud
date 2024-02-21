@@ -4,7 +4,7 @@
     <title>Inicio de sesión</title>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./css/loginstyle.css">
+    <link rel="stylesheet" href="./css/loginstyle.css">   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
@@ -13,7 +13,7 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form action="" method="post">
+    <form action="" method="post" onsubmit="return validacion()">
 
         <div id="texto">
 
@@ -22,14 +22,16 @@
 
             <div class="grid">
                 <div class="col-2"> 
-                    <label for="nombre">Correo electrónico</label>
-                    <input type="email" placeholder="Correo electrónico" required>
+                    <label for="Email">Correo electrónico: <span>*</span></label>
+                    <input onchange="resetear('Email')" type="email" placeholder="Correo electrónico" id="Email" name="Email" aria-describedby="avisoEmail">
+                    <p id="avisoEmail" class="aviso ">Formato de correo erróneo</p>
                 </div>
 
                 <div class="col-2" id="">
 
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" placeholder="Contraseña" required>
+                    <label for="Pass">Contraseña <span>*</span></label>
+                    <input onchange="resetear('Pass')" type="text" placeholder="Contraseña" id="Pass" name="Pass" aria-describedby="avisoPass">
+                    <p id="avisoPass" class="aviso">Debe incluir mayuscula, minuscula, dígitos y carácteres especiales</p>
                 </div>
 
             </div>
@@ -48,5 +50,8 @@
         </div>
 
     </form>
+
+    <script src="./js/loginjs.js"></script>
+
 </body>
 </html>

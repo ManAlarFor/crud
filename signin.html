@@ -13,7 +13,7 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form action="" method="post">
+    <form action="" method="post" onsubmit="return validacion()">
 
         <div id="texto">
 
@@ -23,10 +23,11 @@
             <div class="grid">
                 <div class="col-2"> 
                     <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Nombre"  onchange="resetear('Nombre')" id="Nombre" name="Nombre" aria-describedby="avisoNombre">
+                    <p id="avisoNombre" class="aviso">Nombre requerido</p>
 
                     <label class="creacion" for="origen">País de nacimiento</label>
-                    <select id="pais" name="pais" required>
+                    <select id="Pais" name="Pais"  onchange="resetear('Pais')">
                         <option value="0" >-Elije Opción-</option>
                         <option value="AF">Afganistán</option>
                         <option value="AL">Albania</option>
@@ -263,6 +264,8 @@
                         <option value="ZW">Zimbabue</option>
                         <option value="Desconocido">Desconocido</option>
                     </select>
+                    <p id="avisoPais" class="aviso">Pais de nacimiento requerido</p>
+
 
                     <label for="tipo">Fecha de nacimiento</label>
                     <input type="date" required>
@@ -271,13 +274,17 @@
                 <div class="col-2" id="">
                     
                     <label for="descripción">Apellido</label>
-                    <input type="text" placeholder="Apellido" required>
+                    <input type="text" placeholder="Apellido"  onchange="resetear('Apellido')" id="Apellido" name="Apellido" aria-describedby="avisoApellido">
+                    <p id="avisoApellido" class="aviso">Apellido requerido</p>
                     
                     <label class="creacion" for="account">Nombre de Usuario</label>
-                    <input type="text" placeholder="Nombre de la cuenta: usar caracteres especiales..." required>
+                    <input type="text" placeholder="Nombre de la cuenta: usar caracteres especiales..." placeholder="Usuario"  onchange="resetear('Usuario')" id="Usuario" name="Usuario" aria-describedby="avisoUsuario">
+                    <p id="avisoUsuario" class="aviso">Nombre de usuario requerido (debe tener letras, números y carácteres especiales)</p>
 
                     <label for="seccion">Numero de Identificación en la empresa</label>
-                    <input type="text" placeholder="ID en la empresa" required>
+                    <input type="text" placeholder="ID en la empresa" placeholder="ID"  onchange="resetear('ID')" id="ID" name="ID" aria-describedby="avisoID">
+                    <p id="avisoID" class="aviso">Numero de identificación requerido</p>
+
                 </div>
 
             </div>
@@ -285,5 +292,8 @@
         <button type="submit">Entrar</button>
 
     </form>
+
+    <script src="./js/signinjs.js"></script>
+
 </body>
 </html>

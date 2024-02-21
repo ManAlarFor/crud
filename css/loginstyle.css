@@ -47,6 +47,8 @@ body{
     bottom: -80px;
 }
 
+
+
 /*************************Formulario*******************************/
 form{
     height: 560px;
@@ -121,6 +123,17 @@ a:hover{
 
 .creacion{
     margin-bottom: 1.5%;
+}
+
+.aviso{
+    padding-top: 0.5em;
+    font-size: 0.7em;
+    color: red;
+    visibility: hidden;
+}
+
+span{
+    color: red;
 }
 
 /***************************Grid***************************/
