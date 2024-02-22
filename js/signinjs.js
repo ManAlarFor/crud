@@ -14,7 +14,6 @@ function validacion(){
     if(nombre=="" || /^\s+$/.test(nombre) || /[0-9]/.test(nombre) || !/[a-zñ']{2,}/.test(nombre)){
 
         document.getElementById('avisoNombre').style.visibility="visible";
-        document.getElementById("Nombre").style.borderColor="red";
         valor = false;
 
     }
@@ -22,7 +21,6 @@ function validacion(){
     if(pais=="0"){
 
         document.getElementById('avisoPais').style.visibility="visible";
-        document.getElementById("Pais").style.borderColor="red";
         valor = false;
 
     }
@@ -30,7 +28,6 @@ function validacion(){
     if(apellido=="" || /^\s+$/.test(apellido) || /[0-9]/.test(apellido) || !/[a-zñ']{2,}/.test(apellido)){
 
         document.getElementById('avisoApellido').style.visibility="visible";
-        document.getElementById("Apellido").style.borderColor="red";
         valor = false;
 
     }
@@ -38,7 +35,6 @@ function validacion(){
     if(usuario=="" || /^\s+$/.test(usuario) || ! /[0-9]/.test(usuario) || !/[a-zñ']{2,}/.test(usuario)){
 
         document.getElementById('avisoUsuario').style.visibility="visible";
-        document.getElementById("Usuario").style.borderColor="red";
         valor = false;
 
     }
@@ -46,7 +42,6 @@ function validacion(){
     if(ID=="" ||  /^\s+$/.test(ID) || ! /[0-9]/.test(ID) || /[a-zñ']{2,}/.test(ID)){
 
         document.getElementById('avisoID').style.visibility="visible";
-        document.getElementById("ID").style.borderColor="red";
         valor = false;
 
     }
