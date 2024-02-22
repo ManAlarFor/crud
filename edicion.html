@@ -13,7 +13,7 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form action="" method="post">
+    <form action="" method="post" onsubmit="return validacion()">
 
         <div id="texto">
 
@@ -22,11 +22,12 @@
 
             <div class="grid">
                 <div class="col-2"> 
-                    <label for="nombre">Pieza Histórica</label>
-                    <input type="text" placeholder="Nombre de la Pieza Histórica" value="La piedra de Rosetta" required>
+                    <label for="Nombre">Pieza Histórica</label>
+                    <input type="text" placeholder="Nombre de la Pieza Histórica" value="La piedra de Rosetta" onchange="resetear('Nombre')" id="Nombre" name="Nombre" aria-describedby="avisoNombre">
+                    <p id="avisoNombre" class="aviso">Nombre de la pieza requerido</p>
 
                     <label class="creacion" for="origen">País de origen</label>
-                    <select id="pais" name="pais" required>
+                    <select id="Pais" name="Pais"  onchange="resetear('Pais')">
                         <option value="0">-Elije Opción-</option>
                         <option value="AF">Afganistán</option>
                         <option value="AL">Albania</option>
@@ -263,14 +264,16 @@
                         <option value="ZW">Zimbabue</option>
                         <option value="Desconocido">Desconocido</option>
                     </select>
+                    <p id="avisoPais" class="aviso">Pais de origen requerido</p>
 
-                    <label for="tipo">Tipo de Pieza</label>
-                    <input type="text" placeholder="Tipo de pieza: escultura, armadura, arma..." value="ruina" required>
+                    <label for="Pieza">Tipo de Pieza</label>
+                    <input type="text" placeholder="Tipo de pieza: escultura, armadura, arma..." value="Ruina" onchange="resetear('Pieza')" id="Pieza" name="Pieza" aria-describedby="avisoPieza">
+                    <p id="avisoPieza" class="aviso">Tipo de pieza requerido</p>
                 </div>
 
                 <div class="col-2" id="">
-                    <label class="creacion" for="edad">Edad en la que se creó</label>
-                    <select name="edad" id="edad" required>
+                    <label class="creacion" for="Edad">Edad en la que se creó</label>
+                    <select name="Edad" id="Edad" onchange="resetear('Edad')">
                         <option value="0">-Elije Opción-</option>
                         <option value="1" selected>Prehistoria</option>
                         <option value="2">Edad Antigua</option>
@@ -278,12 +281,33 @@
                         <option value="4">Edad Contemporánea</option>
                         <option value="5">Desconocido</option>
                     </select>
+                    <p id="avisoEdad" class="aviso">Edad de creación requerida</p>
 
-                    <label for="descripción">Descripción</label>
-                    <input type="text" placeholder="Corta descripción" value="Clave en el desciframiento de los jeroglíficos egipcios." required>
+                    <label for="Seccion">Sección</label>
+                    <input type="text" placeholder="Sección en la que se ubica" value="Sala 4 de la zona del Antiguo Egipto" onchange="resetear('Seccion')" id="Seccion" name="Seccion" aria-describedby="avisoSeccion">
+                    <p id="avisoSeccion" class="aviso">Seccion a la que pertenece requerido</p>
 
-                    <label for="seccion">Sección</label>
-                    <input type="text" placeholder="Sección en la que se ubica" value="Sala 4 de la zona del Antiguo Egipto" required>
+                    <label for="Ubicacion">Ubicación</label>
+                    <div class="form-check">
+                    
+                        <input type="radio" id="expo" name="Ubicacion" class="Ubicacion" value=1 checked>
+                        <label class="form-check-label" for="expo">
+                            En exposición
+                        </label><br>
+
+
+                    </div>
+
+                    <div class="form-check">
+
+                        <input type="radio" id="almacen" name="Ubicacion" class="Ubicacion" value=2>
+                        <label class="form-check-label" for="almacen">
+                            En almacén
+                        </label><br>
+
+                    </div>
+                    <p id="avisoUbicacion" class="aviso">Indique donde se encuentra</p>
+
                 </div>
 
             </div>
@@ -291,5 +315,8 @@
         <button type="submit">Entrar</button>
 
     </form>
+
+    <script src="./js/insercionjs.js"></script>
+
 </body>
 </html>
