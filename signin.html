@@ -278,14 +278,19 @@
                     <p id="avisoApellido" class="aviso">Apellido requerido</p>
                     
                     <label class="creacion" for="account">Nombre de Usuario</label>
-                    <input type="text" placeholder="Nombre de la cuenta: usar caracteres especiales..." placeholder="Usuario"  onchange="resetear('Usuario')" id="Usuario" name="Usuario" aria-describedby="avisoUsuario">
-                    <p id="avisoUsuario" class="aviso">El nombre de usuario solo debe tener letras o números</p>
+                    <input type="text" placeholder="Nombre de la cuenta: no usar caracteres especiales..." placeholder="Usuario"  onchange="resetear('Usuario')" id="Usuario" name="Usuario" aria-describedby="avisoUsuario">
+                    <p id="avisoUsuario" class="aviso">El nombre de usuario solo debe tener minúsculas o números</p>
 
                     <label for="seccion">Numero de Identificación en la empresa</label>
                     <input type="text" placeholder="ID en la empresa" placeholder="ID"  onchange="resetear('ID')" id="ID" name="ID" aria-describedby="avisoID">
                     <p id="avisoID" class="aviso">Numero de identificación requerido</p>
 
                 </div>
+
+                <input type="checkbox" id="Terminos">
+                <label for="Terminos" id="labelTerminos">Acepto las condiciones de uso de la aplicación</label>
+                <p id="avisoTerminos" class="aviso">Aceptación de las condiciones requerido</p>
+
 
             </div>
         </div>

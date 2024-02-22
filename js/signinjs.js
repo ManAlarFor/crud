@@ -9,6 +9,7 @@ function validacion(){
     let apellido = document.getElementById('Apellido').value ;
     let usuario = document.getElementById('Usuario').value ;
     let ID = document.getElementById('ID').value ;
+    let terminos = document.getElementById('Terminos').checked ;
     let valor = true;
 
     if(nombre=="" || /^\s+$/.test(nombre) || /[0-9]/.test(nombre) || !/[a-zñ']{2,}/.test(nombre)){
@@ -42,6 +43,13 @@ function validacion(){
     if(ID=="" ||  /^\s+$/.test(ID) || ! /[0-9]/.test(ID) || /[a-zñ']{2,}/.test(ID)){
 
         document.getElementById('avisoID').style.visibility="visible";
+        valor = false;
+
+    }
+
+    if(!terminos){
+
+        document.getElementById('avisoTerminos').style.visibility="visible";
         valor = false;
 
     }

@@ -49,7 +49,7 @@ body{
 
 /*************************Formulario*******************************/
 form{
-    height: 720px;
+    height: 790px;
     width: 1000px;
     background-color: #ffffff21;
     position: absolute;
@@ -162,6 +162,22 @@ span{
     margin: 0%;
 }
 
+
+#Terminos {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-left: 19em;
+}
+
+#avisoTerminos{
+    text-align: center;
+}
+
+#labelTerminos{
+    margin-left: -4em;
+}
+
 /***************************Grid***************************/
 
 .grid{
@@ -181,6 +197,15 @@ span{
 /***********************Responsividad**************************/
 
 @media screen and (max-width: 1000px) {
+
+    
+    .Ubicacion{
+        width: 40px;
+        height: 40px;
+        margin-right:0em;
+
+    }
+
     .grid{
         grid-template-columns: 100%;
     }
@@ -188,7 +213,7 @@ span{
     form{
         width: 90%;
         top: 50%;
-        height: 1320px;
+        height: 1810px;
     }
 
     form h3{
@@ -216,5 +241,21 @@ span{
     button{
         font-size: 1.5em;
     }
+
+    #Terminos {
+        width: 40px;
+        height: 40px;
+        margin-left: 0px;
+    }
     
+    #labelTerminos{
+        margin-left: 0em;
+        font-size: 1.5em;
+    }
+
+    .aviso{
+        font-size: 1.6em;
+    }
+
+
 }
