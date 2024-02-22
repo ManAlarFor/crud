@@ -9,6 +9,9 @@ function validacion(){
     let pieza = document.getElementById('Pieza').value ;
     let edad = document.getElementById('Edad').value ;
     let seccion = document.getElementById('Seccion').value ;
+    let ubicacion = 0 ;
+        ubicacion = document.getElementById('expo').checked ;
+        ubicacion = document.getElementById('almacen').checked ;
     let valor = true;
 
     if(nombre=="" || /^\s+$/.test(nombre) || /[0-9]/.test(nombre) || !/[a-zñ']{2,}/.test(nombre)){
@@ -27,7 +30,7 @@ function validacion(){
 
     }
 
-    if(pieza=="" || /^\s+$/.test(pieza) || /[0-9]/.test(pieza) || !/[a-zñ']{2,}/.test(pieza)){
+    if(pieza=="" || /^\s+$/.test(pieza) || !/[a-zñ']{2,}/.test(pieza)){
 
         document.getElementById('avisoPieza').style.visibility="visible";
         document.getElementById("Pieza").style.borderColor="red";
@@ -47,6 +50,13 @@ function validacion(){
 
         document.getElementById('avisoSeccion').style.visibility="visible";
         document.getElementById("Seccion").style.borderColor="red";
+        valor = false;
+
+    }
+
+    if(ubicacion == 0){
+
+        document.getElementById('avisoUbicacion').style.visibility="visible";
         valor = false;
 
     }

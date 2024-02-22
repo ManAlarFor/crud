@@ -286,12 +286,33 @@
                     </select>
                     <p id="avisoEdad" class="aviso">Edad de creación requerida</p>
 
+                    <label for="Seccion">Sección <span>*</span></label>
+                    <input type="text" placeholder="Sección a la que pertenece" onchange="resetear('Seccion')" id="Seccion" name="Seccion" aria-describedby="avisoSeccion">
+                    <p id="avisoSeccion" class="aviso">Seccion a la que pertenece requerido</p>
+
+
+                    <label for="Ubicacion">Ubicación <span>*</span></label>
+                    <div class="form-check">
                     
+                        <input type="radio" id="expo" name="Ubicacion" class="Ubicacion" value=1>
+                        <label class="form-check-label" for="expo">
+                            En exposición
+                        </label><br>
 
-                    <label id="descrip" for="Seccion">Sección <span>*</span></label>
-                    <input type="text" placeholder="Sección en la que se ubica" onchange="resetear('Seccion')" id="Seccion" name="Seccion" aria-describedby="avisoSeccion">
-                    <p id="avisoSeccion" class="aviso">Seccion en la que se ubica requerido</p>
 
+                    </div>
+
+                    <div class="form-check">
+
+                        <input type="radio" id="almacen" name="Ubicacion" class="Ubicacion" value=2>
+                        <label class="form-check-label" for="almacen">
+                            En almacén
+                        </label><br>
+
+                    </div>
+                    <p id="avisoUbicacion" class="aviso">Indique donde se encuentra</p>
+
+                    
                 </div>
 
             </div>
