@@ -13,3 +13,5 @@ https://codepen.io/alexerlandsson/pen/mPWgpO
 
 Para que esta fuese responsive utilicé código de diversas fuentes para acabar creando uno propio que se adecuase a mi tabla.
 
+El favicon lo saque de esta página:
+https://icon-icons.com/es/icono/museo/3022
