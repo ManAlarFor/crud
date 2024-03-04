@@ -128,12 +128,12 @@ a:hover{
 .aviso{
     padding-top: 0.5em;
     font-size: 0.7em;
-    color: red;
+    color: #d9517e;
     visibility: hidden;
 }
 
 span{
-    color: red;
+    color: #d9517e;
 }
 
 /***************************Grid***************************/

@@ -129,14 +129,14 @@ select{
 }
 
 .aviso{
-    color: red;
+    color: #d9517e;
     visibility: hidden;
     padding-top: 0.5em;
     font-size: 0.7em;
 }
 
 span{
-    color: red;
+    color: #d9517e;
 }
 
 .form-check{
